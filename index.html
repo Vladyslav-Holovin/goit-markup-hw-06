@@ -22,6 +22,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script type="text/javascript" src="./js/main.js"></script>
   </head>
   <body>
     <header class="header">
@@ -57,15 +58,15 @@
           </ul>
         </address>
 
-        <button type="button" class="mobile-menu-open">
+        <button type="button" class="mobile-menu-open" onclick="show()">
           <svg class="burger-menu-open" width="24" height="24">
             <use href="./images/icons.svg#icon-burger-menu"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu" id="mobileMenu">
         <div>
-          <button type="button" class="mobile-menu-close">
+          <button type="button" class="mobile-menu-close" onclick="hide()">
             <svg class="burger-menu-close" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
